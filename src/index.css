@@ -1,0 +1,142 @@
+:root {
+    --main: rgb(43, 43, 43);
+}
+
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    color: white;
+    background-color: var(--main);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.heading {
+    background-color: var(--main);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: rgb(95, 95, 95);
+}
+
+.heading img {
+    aspect-ratio: 1/1;
+    width: 2%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 5%;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction {
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: -50%;
+    z-index: 10;
+}
+
+main:hover .introduction{
+    scale: 1;
+    margin-right: 0%;
+}
+
+main:hover .pic-container {
+    margin-left: 0%;
+}
+main:hover .pic-container img{
+    scale: 1;
+}
+.introduction span, .introduction h1, .introduction a {
+    scale: 2;
+}
+
+.pic-container {
+    transition-duration: 500ms;
+    width: 40%;
+    z-index: 11;
+}
+
+.pic-container img {
+    transition-duration: 500ms;
+    aspect-ratio: 1/1;
+    width: 100%;
+    margin-left: -50%;
+    scale: 1.4;
+}
+
+.about-container {
+    width: 70%;
+    border-top-style: solid;
+}
+
+.about-container span {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    width: 12%;
+    margin-top: -3%;
+    background-color: var(--main);
+    font-weight: 900;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    
+    justify-content: center;
+}
+.skill {
+    
+    border-bottom: solid 2px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+}
+
+.skill h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.skills span {
+    width: 150%;
+    font-size: 0.8rem;
+    text-align: center;
+}
